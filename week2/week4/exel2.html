@@ -8,18 +8,14 @@
     <style>
         #nav {
             display: flex;
-            justify-content: space-between;
-            background-color: rgb(13, 13, 154);
-            background-size: 100cm;
-            width: 200px;
-            padding-right: 1000px;
-            padding-left: 1000px;
-
+            background-color: rgb(41, 146, 238)
         }
 
         a {
             text-decoration: none;
             color: white;
+            font-size: large;
+
             padding: 20px;
 
         }
@@ -28,41 +24,43 @@
             text-decoration: underline;
 
 
+
         }
 
         .navbar .logo img {
             display: flex;
-            height: 40px;
-            background-color: aliceblue;
-            margin-top: 20px;
 
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(41, 146, 238)
         }
     </style>
 
 </head>
 
 <body>
-    <header>
-        <a href="image/zus_logo.png">
-            <img src="image/zus_logo.png" alt="Logo" width="50px">
-        </a>
-        <div class="navbar">
-            <!-- Logo in the navbar -->
-            <div class="logo">
 
 
-            </div>
+    <div class="navbar">
+        <!-- Logo in the navbar -->
+        <div class="logo">
+            <a href="image/zus_logo.png"><img src="image/zus_logo.png" alt="Logo" width="50"></a>
 
-            <div id="nav">
+        </div>
 
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Team</a>
-                <a href="#">Contact</a>
+        <div id="nav">
 
-            </div>
-    </header>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+
+        </div>
+    </div>
 
 
 
