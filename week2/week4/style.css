@@ -1,0 +1,131 @@
+button.SUBSCRIBE {
+    background-color: #bc040c;
+    color: white;
+    border: 1px solid red;
+    border-radius: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button.Join {
+    background-color: #dfe0e1;
+    color: #1e3a78;
+    border: 1px solid #35394e;
+    border-radius: 1px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button.Tweet {
+    background-color: #1d87d0;
+    color: #d4e1ec;
+    border: 0px solid #2778ad;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+button.request {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+button.signup {
+    background-color: #55a35a;
+    color: white;
+    border: 0px solid#55a35a;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+button.addtocart {
+    background-color: #f9da4e;
+    color: #2d2305;
+    border: #f9da4e;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+button.getstarted {
+    background-color: #7353ad;
+    color: #f5f0fc;
+    border: 1px solid #7353ad;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+button.download {
+    background-color: #ffffff;
+    color: #70757d;
+    border: 0.5px solid#70757d;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+
+
+}
+
+button.companywebsite {
+    background-color: #2d65bc;
+    color: #fefcfe;
+    border: 0.5px solid#2d65bc;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+button.save {
+    background-color: #ffffff;
+    color: #2967bf;
+    border: 2px solid#2d65bc;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+}
+
+.button-style {
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#bigbutton {
+    font-size: 20;
+    border: 0px
+}
+
+.setbg {
+    background-image: url("image/dog.jpg");
+    background-size: contain;
+    color: aliceblue;
+
+}
