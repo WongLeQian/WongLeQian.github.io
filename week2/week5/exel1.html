@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        week5 Exercise 1: Navigation Bar
+
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        header {
+            background-color: #fff4dc;
+            justify-content: left;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+
+        .nav {
+            display: flex;
+            color: black;
+            padding: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            margin-right: 20px;
+            padding-top: 0px;
+        }
+
+
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .nav2 {
+            display: flex;
+            color: black;
+            padding: 20px;
+            justify-content: flex-end;
+            margin-left: 700px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 13px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: medium;
+        }
+
+        .nav2 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo in the navbar -->
+        <div class="logo">
+            <p>
+                BREW
+            </p>
+        </div>
+
+        <div class="nav">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Location& Hours</a>
+        </div>
+        <div class="nav2">
+
+            <a href="image/login.png"></a>
+            <a href="image/login.png"><img src="image/login.png" alt="Log In" width="20"></a>
+            <a href="#">Log In</a>
+            <a href="#">Cart(0)</a>
+        </div>
+
+        <button>
+            Order Online
+        </button>
+
+    </header>
+</body>
+
+</html>
