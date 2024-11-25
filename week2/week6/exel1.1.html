@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week6 Exercise 1: Navigation Bar</title>
+    <style>
+        header {
+            display: flex;
+            background-color: rgb(51, 51, 51);
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            color: white;
+
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: white;
+            min-width: 200px;
+            top: 100%;
+            left: 0;
+            box-sizing: border-box;
+            z-index: 1;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 10px;
+        }
+
+        .submenu a:hover {
+            background-color: rgb(87, 87, 87);
+        }
+
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/netflix.png" alt="netflix" height="80">
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <div class="menu-item">
+
+                <a href="#">About<img src="image/down arrow.png" alt="Icon"></a>
+
+                <div class="submenu">
+                    <a href="#">Mission</a>
+                    <a href="#">Vision</a>
+                </div>
+            </div>
+            <div class="menu-item">
+
+                <a href="#">Services<img src="image/down arrow.png" alt="Icon"></a>
+                <div class="submenu">
+                    <a href="#">Web Development</a>
+                    <a href="#">App Development</a>
+                    <a href="#">SEO Services</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+
+</html>
