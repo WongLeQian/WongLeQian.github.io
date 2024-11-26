@@ -21,6 +21,7 @@
             background-color: rgb(188, 152, 152);
             color: rgb(245, 235, 235);
             justify-content: space-between;
+
         }
 
         .head {
@@ -128,6 +129,7 @@
             text-align: center;
             align-items: center;
             padding: 5px;
+            margin-top: 50px;
         }
 
         .p {
@@ -153,6 +155,27 @@
         a.hover {
             text-decoration: underline;
 
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .container {
+                background-size: cover;
+
+                flex-direction: column;
+            }
+
+            .column {
+                padding-left: 50px;
+                padding-right: 20px;
+            }
+
+        }
+
+        .column {
+            padding-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -198,7 +221,7 @@
                 <img src="image/calender.png" alt="calender" height="20">
                 <h2>Week 2</h2>
             </div>
-            <hr class="line"> <!-- Adds a horizontal line here -->
+            <hr class="line"><!-- Adds a horizontal line here -->
             <div class="a">
                 <a href="http://127.0.0.1:5500/week2/exel1.html" target="_blank"
                     style="text-decoration: none; color: inherit;">
@@ -268,11 +291,45 @@
 
                 <p>Exercise 2</p>
             </a>
+
+            <a href="http://127.0.0.1:5500/week5/exel3.html" target="_blank">
+
+                <p>Exercise 3</p>
+            </a>
         </div>
 
     </div>
 
     <br /><br />
+    <!--column 3-->
+    <div class="column4">
+        <div class="space">
+            <img src="image/calender.png" alt="calender" height="20">
+            <h2> Week 6</h2>
+        </div>
+        <hr class="line"> <!-- Adds a horizontal line here -->
+        <div class="a">
+
+            <a href="http://127.0.0.1:5500/week6/exel1.1.html" target="_blank">
+                <p>Exercise 1</p>
+
+            </a>
+            <a href="http://127.0.0.1:5500/week6/exel2.html" target="_blank">
+
+                <p>Exercise 2</p>
+            </a>
+            <a href="http://127.0.0.1:5500/week6/exel3.html" target="_blank">
+
+                <p>Exercise 3</p>
+            </a>
+            <a href="http://127.0.0.1:5500/week6/exel4.html" target="_blank">
+
+                <p>Exercise 4</p>
+            </a>
+        </div>
+
+    </div>
+
 
     <!--footer-->
     <div class="head footer">
