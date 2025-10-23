@@ -93,6 +93,65 @@
         .member:nth-child(4) {
             transform: translateY(225px);
         }
+
+        @media (max-width: 1000px) {
+            .team-container {
+                flex-wrap: wrap;
+                /* 允许换行 */
+                justify-content: center;
+                /* 居中对齐 */
+                gap: 20px;
+                /* 卡片之间间距 */
+            }
+
+            .member {
+
+                transform: translateY(0);
+                /* 取消原本的错落位移 */
+                display: flex;
+                flex-direction: column;
+
+                align-items: flex-start;/
+            }
+
+            .member img {
+                width: 100%;
+                /* 图片稍微小一点，看起来更整齐 */
+            }
+
+            .line {
+                width: 300px;
+                /* 根据手机画面缩短线条 */
+            }
+
+            .member:nth-child(1) {
+                transform: translateY(0px);
+                /*nth-child() 是 CSS 的一种选择器（selector），
+            用来选择第几个子元素（child element）。*/
+            }
+
+            .member:nth-child(2) {
+                transform: translateY(0px);
+            }
+
+            .member:nth-child(3) {
+                transform: translateY(0px);
+            }
+
+            .member:nth-child(4) {
+                transform: translateY(0px);
+            }
+
+            .name h3 {
+                text-align: left;
+                margin-left: 0;
+            }
+
+            .role {
+                justify-content: left;
+            }
+
+        }
     </style>
 
 </head>
