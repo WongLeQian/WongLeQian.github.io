@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Flexbox</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #4b0d17;
+
+
+        }
+
+        .team-container {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .member {
+            margin: 10px;
+        }
+
+        .name h3 {
+            font-family: 'Lora', sans-serif;
+            font-style: normal;
+            color: #D17070;
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 0;
+
+
+        }
+
+        .role {
+            color: #FCD9D9;
+            font-family: Prompt, sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 18px;
+        }
+
+        .pic img {
+            width: 90%;
+            filter: brightness(100%) contrast(90%) saturate(0%) blur(0px) hue-rotate(0deg);
+            transition-duration: 1s;
+            box-sizing: border-box;
+
+        }
+
+        .pic img:hover {
+            filter: none;
+        }
+
+        .line {
+            width: 300px;
+            height: 0.7px;
+            background-color: #D17070;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .member:nth-child(1) {
+            transform: translateY(0px);
+            /*nth-child() 是 CSS 的一种选择器（selector），
+            用来选择第几个子元素（child element）。*/
+        }
+
+        .member:nth-child(2) {
+            transform: translateY(75px);
+        }
+
+        .member:nth-child(3) {
+            transform: translateY(150px);
+        }
+
+        .member:nth-child(4) {
+            transform: translateY(225px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="team-container">
+        <div class="member">
+            <div class="name">
+                <h3>JOSEPH BARNES</h3>
+            </div>
+            <div class="line"></div>
+
+            <div class="pic">
+                <img src="image/joseph.jpg" alt="Joseph Barnes">
+            </div>
+
+            <div class="role">Manager</div>
+        </div>
+
+        <div class="member">
+            <div class="name">
+                <h3>EARL WOOD</h3>
+            </div>
+            <div class="line"></div>
+
+            <div class="pic">
+                <img src="image/earlwood.jpg" alt="Earl Wood">
+            </div>
+
+            <div class="role">Bartender</div>
+        </div>
+
+        <div class="member">
+            <div class="name">
+                <h3>BOBBY JOHNSON</h3>
+            </div>
+            <div class="line"></div>
+
+            <div class="pic">
+                <img src="image/bobby.jpg" alt="Bobby Johnson">
+            </div>
+
+            <div class="role">Bartender</div>
+        </div>
+
+        <div class="member">
+            <div class="name">
+                <h3>JANE MORGAN</h3>
+            </div>
+            <div class="line"></div>
+
+            <div class="pic">
+                <img src="image/jane.jpg" alt="Jane Morgan">
+            </div>
+
+            <div class="role">Bartender</div>
+        </div>
+    </div>
+
+
+</body>

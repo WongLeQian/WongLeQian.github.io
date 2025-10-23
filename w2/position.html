@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Navigation Bar</title>
+    <title>week2-exercise1</title>
     <style>
         body {
             background-color: rgb(247, 244, 238);
@@ -102,6 +102,142 @@
         }
 
 
+        /* homepage*/
+        .hero {
+            display: flex;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .bg-img {
+            background-image: url(image/bigimg.jpg);
+            background-size: cover;
+            height: 100vh;
+            border-radius: 16px;
+            width: 100%;
+            position: relative;
+            justify-content: left;
+
+            margin-left: 3px;
+            margin-right: 3px;
+
+
+        }
+
+        .title {
+            position: absolute;
+            top: 90px;
+            left: 50px;
+            color: white;
+            font-family: "Archivo", sans-serif;
+
+        }
+
+        .title h1 {
+            font-size: 100px;
+            font-weight: 200px;
+            letter-spacing: -6px;
+            line-height: 0.9;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .title p {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+            line-height: 1.6;
+            margin-top: 0px;
+            font-weight: 20px;
+            font-family: "Archivo", sans-serif;
+        }
+
+        .btn-yellow {
+            background-color: hsl(48, 100%, 69%);
+            color: black;
+            padding: 16px 38px 16px 38px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 16px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: hsl(48, 100%, 69%);
+
+
+        }
+
+        .btn-yellow:hover {
+            background-color: hsl(48, 81%, 65%);
+            border-color: hsl(48, 80%, 65%);
+            transition: all .3s;
+        }
+
+        .buttons {
+            margin-top: 45px;
+        }
+
+        .btn-outline {
+            padding: 16px 38px 16px 38px;
+            border-radius: 7px;
+            color: white;
+            border-color: white;
+            text-decoration: none;
+            border-style: solid;
+            border-width: 2px;
+            font-size: 16px;
+            margin-left: 20px;
+
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: black;
+            transition: all .3s;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* 每个盒子之间的间距 */
+            max-width: 500px;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            justify-content: flex-end;
+
+
+        }
+
+        .box1 {
+            background-color: white;
+
+            font-family: "Archivo", sans-serif;
+            border-radius: 16px 16px 16px 16px;
+            padding: 25px 30px 30px 30px;
+            flex: 1 1 calc(50% - 10px);
+            /* 每行两个 (50%)，减去gap */
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .box1 h1 {
+            font-size: 50px;
+            color: #F9612B;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .box1 h6 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+
+
+
         /* ============ MOBILE ============ */
         @media (max-width: 1100px) {
             .menu {
@@ -161,6 +297,34 @@
                 font-weight: 300;
                 display: block;
             }
+
+            .title h1 {
+                font-size: 50px;
+                letter-spacing: 0px;
+            }
+
+            .title p {
+                font-size: 14px;
+                margin-top: 10px;
+
+            }
+
+            .hero {
+                margin: 0;
+                padding: 0px;
+
+
+            }
+
+            .bg-img {
+                background-image: url(image/bigimg.jpg);
+                background-size: cover;
+                border-radius: 0px;
+                background-size: cover;
+                height: 120vh;
+                width: 100%;
+
+            }
         }
 
         @media (max-width: 750px) {
@@ -184,6 +348,29 @@
                 color: white;
                 cursor: pointer;
                 font-weight: 300;
+            }
+
+            .container {
+                position: absolute;
+                /* 移除绝对定位，避免卡在角落 */
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                left: 50px;
+                right: 20px;
+                bottom: 10px;
+                justify-content: center;
+                align-items: center;
+
+
+
+            }
+
+            .box1 {
+                flex: none;
+                width: 100%;
+
+                text-align: left;
             }
         }
     </style>
@@ -217,6 +404,52 @@
             <a href="#" class="contact-btn">Contact</a>
         </div>
     </header>
+
+    <div class="hero">
+        <div class="bg-img">
+            <div class="title">
+                <h1>Modern</h1>
+                <h1>Foundations</h1>
+                <p>Your trusted partner for cutting-edge foundation construction.<br>
+                    We deliver robust and reliable solutions tailored to your project’s needs.</p>
+                <div class="buttons">
+                    <a href="#" class="btn-yellow">Quote Request</a>
+                    <a href="#" class="btn-outline">Our Portfolio</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="box1">
+                    <h1>50+</h1>
+                    <h6>Multi-Story Projects</h6>
+
+                </div>
+                <div class="box1">
+                    <h1>174</h1>
+                    <h6>Multi-Story Projects</h6>
+
+                </div>
+                <div class="box1">
+                    <h1>21</h1>
+                    <h6>Multi-Story Projects</h6>
+
+                </div>
+                <div class="box1">
+                    <h1>360+</h1>
+                    <h6>Multi-Story Projects</h6>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
 
     <script>
         const navMenu = document.getElementById("navMenu");
